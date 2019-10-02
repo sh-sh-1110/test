@@ -13,7 +13,7 @@ public class BuyItemCompleteDAO {
 		Connection con = db.getConnection();
 		DateUtil dateUtil = new DateUtil();
 
-		String sql = "INSERT INTO user_buy_item_transaction(item_transaction_id,total_price,total_count,user_master_id,pay,insert_date)VALUES(?,?,?,?,?)";
+		String sql = "INSERT INTO user_buy_item_transaction(item_transaction_id,total_price,total_count,user_master_id,pay,insert_date)VALUES(?,?,?,?,?,?)";
 
 		try{
 			PreparedStatement ps = con.prepareStatement(sql);
