@@ -10,9 +10,9 @@
 	<package name="com.internousdev.ecsite.action" extends="struts-default">
 
 <!-- Go Home Action -->
-		<action name="GoHomeAction" class="com.internousdev.ecsite.action.GoHomeAction" method="execute">
-			<result name="success">home.jsp</result>
-		</action>
+<!-- 		<action name="GoHomeAction" class="com.internousdev.ecsite.action.GoHomeAction" method="execute"> -->
+<!-- 			<result name="success">home.jsp</result> -->
+<!-- 		</action> -->
 
 <!-- Home Action -->
 <!-- 		<action name="HomeAction" class="com.internousdev.ecsite.action.HomeAction" method="execute"> -->
