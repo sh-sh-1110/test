@@ -19,7 +19,7 @@ create table login_user_transaction(
 drop table if exists item_info_transaction;
 
 create table item_info_transaction(
-	id int not null primary key_auto_increment,
+	id int not null primary key auto_increment,
 	item_name varchar(30),
 	item_price int,
 	item_stock int,
@@ -30,7 +30,7 @@ create table item_info_transaction(
 drop table if exists user_buy_item_transaction;
 
 create table user_buy_item_transaction(
-	id int not unll primary key_auto_increment,
+	id int not null primary key auto_increment,
 	item_transaction_id int,
 	total_price int,
 	total_count int,

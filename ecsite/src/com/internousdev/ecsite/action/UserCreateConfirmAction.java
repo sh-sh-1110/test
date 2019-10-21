@@ -1,14 +1,16 @@
 package com.internousdev.ecsite.action;
 
 import java.util.Map;
+
 import org.apache.struts2.interceptor.SessionAware;
+
 import com.opensymphony.xwork2.ActionSupport;
 
 public class UserCreateConfirmAction extends ActionSupport implements SessionAware{
 	private String loginUserId;
 	private String loginPassword;
 	private String userName;
-	private Map<String,Object>session;
+	private Map<String,Object> session;
 	private String errorMessage;
 
 	public String execute(){
@@ -21,7 +23,7 @@ public class UserCreateConfirmAction extends ActionSupport implements SessionAwa
 				session.put("loginPassword", loginPassword);
 				session.put("userName", userName);
 		}else{
-			setErrorMessage("–¢“ü—Í‚Ì€–Ú‚ª‚ ‚è‚Ü‚·B");
+			setErrorMessage("æœªå…¥åŠ›ã®é …ç›®ãŒã‚ã‚Šã¾ã™ã€‚");
 			result=ERROR;
 		}
 		return result;
@@ -59,12 +61,12 @@ public class UserCreateConfirmAction extends ActionSupport implements SessionAwa
 		this.errorMessage = errorMessage;
 	}
 
-	public Map<String, Object>getSession(){
+	public Map<String, Object> getSession(){
 		return this.session;
 	}
 
 	@Override
-	public void setSession(Map<String,Object>session){
+	public void setSession(Map<String,Object> session){
 		this.session = session;
 	}
 
